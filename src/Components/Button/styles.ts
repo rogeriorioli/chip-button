@@ -10,6 +10,7 @@ export interface BtnProps  {
 
 export const ButtonContainer = styled.button<BtnProps>`
     width : 260px;
+    margin : 2%;
     display: flex;
     padding: 5px 10px;
     align-items : center;
