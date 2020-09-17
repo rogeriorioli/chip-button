@@ -19,15 +19,11 @@ const Button = ({
     ...props
 
 } :ButtonProps) => (
-    <>
     <ButtonContainer {...props} background={background} textcolor={textcolor}>
         <img src={icon} alt={label} srcSet={icon}/>
         <span>{label}</span> 
         <img src={close} alt={label} srcSet={close}/>
     </ButtonContainer>
-    </>
-
-
 );
 
 
