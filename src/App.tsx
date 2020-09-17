@@ -17,6 +17,26 @@ function App() {
           close={close}
           textcolor="#fff"
         />
+          <Button
+          label="No icon"
+          background="#9DDADB"
+          close={close}
+          textcolor="#fff"
+          textalign='left'
+        />
+          <Button
+          icon={profile} 
+          label="Enabled chip"
+          background="#FF8B8B"
+          textcolor="#fff"
+          textalign='left'
+        />
+          <Button
+          label="No icon no close"
+          background="#9DDADB"
+          textcolor="#fff"
+          textalign='left'
+          />
     </div>
   );
 }

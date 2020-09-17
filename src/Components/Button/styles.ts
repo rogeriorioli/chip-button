@@ -4,6 +4,7 @@ import styled from 'styled-components'
 export interface BtnProps  {
   background : '#FF8B8B' | '#9DDADB'
   textcolor : string
+  textalign? : 'center' | 'right' | 'left';
 }
 
 
@@ -19,6 +20,7 @@ export const ButtonContainer = styled.button<BtnProps>`
     border : none;
     transition  : all 0.5s;
     cursor : pointer;
+    min-height : 50px;
     img {
       height : 40px;
     }
@@ -26,6 +28,8 @@ export const ButtonContainer = styled.button<BtnProps>`
       width : 100%;
       font-size : 20px;
       font-weight : 500;
+      padding : 10px;
+      text-align: ${props => props.textalign};
     }
     &:hover {
       opacity : 0.8;

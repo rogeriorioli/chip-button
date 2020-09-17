@@ -16,13 +16,18 @@ const Button = ({
     close, 
     background, 
     textcolor,
+    textalign,
     ...props
 
 } :ButtonProps) => (
-    <ButtonContainer {...props} background={background} textcolor={textcolor}>
-        <img src={icon} alt={label} srcSet={icon}/>
+    <ButtonContainer {...props} 
+    background={background} 
+    textcolor={textcolor}
+    textalign={textalign}
+    >
+        {icon && <img src={icon} alt={label} srcSet={icon}/> }
         <span>{label}</span> 
-        <img src={close} alt={label} srcSet={close}/>
+        {close && <img src={close} alt={label} srcSet={close}/> }
     </ButtonContainer>
 );
 
