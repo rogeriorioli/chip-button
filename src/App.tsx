@@ -35,7 +35,7 @@ function App() {
           label="No icon no close"
           background="#9DDADB"
           textcolor="#fff"
-          textalign='left'
+          textalign='center'
           />
     </div>
   );
